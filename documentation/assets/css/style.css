@@ -1,0 +1,356 @@
+/*-- font-family included --*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #212529;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+a {
+  color: #057ed6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 50px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #f7f7f9;
+  padding: 5px 10px;
+  color: #ff0000;
+  border-radius: 3px;
+}
+
+.video-item {
+  max-width: 100%;
+  max-height: auto;
+  width: 720px;
+  height: 480px;
+}
+
+.ss-img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 5px;
+}
+
+.support-item {
+  display: flex;
+  align-items: center;
+}
+.support-item a {
+  background-color: #f7f7f9;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.support-item a:hover {
+  text-decoration: none;
+  background-color: #d5d5e0;
+}
+
+.sidebar-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(27, 34, 38, 0.8);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  transition: width 0.3s;
+
+  &::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+  }
+}
+
+.main-wrapper {
+  max-width: 80%;
+  margin-left: 20%;
+}
+
+.main-container {
+  margin: 0 4%;
+}
+
+.sidebar-logo {
+  padding: 30px;
+}
+.sidebar-logo a {
+  max-width: 100px;
+}
+.sidebar-logo a img {
+  max-width: 100px;
+}
+
+.sidebar-nav {
+  padding-bottom: 50px;
+}
+
+.sidebar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar-menu li a {
+  text-transform: capitalize;
+  display: block;
+  padding: 10px 30px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sidebar-menu li a.active,
+.sidebar-menu li a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.section-title {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.steps-list {
+  margin-left: 20px;
+  list-style: square;
+}
+
+.footer-section {
+  border-top: 1px solid #dddddd;
+  padding-top: 20px;
+}
+
+/*-- commont style start --*/
+.text-center {
+  text-align: center;
+}
+
+.bb {
+  border-bottom: 1px solid #dddddd;
+}
+
+.view-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.code-view {
+  padding: 20px 0;
+  white-space: pre-wrap;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.color-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.color-item {
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-primary {
+  background-color: #1ee8b7;
+}
+
+/*-- commont style end --*/
+/*-- utilities style start --*/
+/*-- font-weight style start --*/
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+/*-- font-weight style end --*/
+/*-- padding top bottom style start --*/
+.ptb-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ptb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ptb-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.ptb-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/*-- padding top bottom style end --*/
+/*-- padding top style start --*/
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+/*-- padding top style end --*/
+/*-- padding bottom style start --*/
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+/*-- padding botton style end --*/
+/*-- margin top style start --*/
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+/*-- margin top style end --*/
+
+/*-- margin left style start --*/
+.ml-20{
+  margin-left: 20px;
+}
+/*-- margin left style end --*/
+
+/*-- margin bottom style start --*/
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+/*-- margin bottom style end --*/
+/*-- utilities style end --*/
